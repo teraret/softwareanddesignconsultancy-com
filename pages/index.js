@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -22,14 +21,14 @@ We believe in a high-quality workforce that delivers high-quality work and Profi
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Sofware Development</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/software-development" className={styles.card}>
+            <h2>Sofware Development &rarr;</h2>
+            {/* <p>Find in-depth information about Next.js features and API.</p> */}
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Mobile App</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/mobile-application-development" className={styles.card}>
+            <h2>Mobile App &rarr;</h2>
+            {/* <p>Learn about Next.js in an interactive course with quizzes!</p> */}
           </a>
 
           <a
@@ -37,7 +36,7 @@ We believe in a high-quality workforce that delivers high-quality work and Profi
             className={styles.card}
           >
             <h2>Designing &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            {/* <p>Discover and deploy boilerplate example Next.js projects.</p> */}
           </a>
 
           <a
@@ -45,9 +44,9 @@ We believe in a high-quality workforce that delivers high-quality work and Profi
             className={styles.card}
           >
             <h2>Machine Learning&rarr;</h2>
-            <p>
+            {/* <p>
               Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            </p> */}
           </a>
         </div>
 
@@ -68,8 +67,8 @@ We also work in 24/7 Development and Support Model by hiring team Across Differe
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
+          href="https://teraret.com"
+
           rel="noopener noreferrer"
         >
           Powered by{' '}
