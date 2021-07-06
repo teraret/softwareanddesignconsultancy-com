@@ -25,17 +25,6 @@ As one of the most important and most acclaimed groups of specialized software e
 Our Software Development services conjointly offer you premier access to rising technologies through our huge network of business partners. We're there, incubating at the leading edge to bring you an easy, seamless package at its best.
 
       </main>
-<footer className={styles.footer}>
-  <a
-    href="https://teraret.com"
-    rel="noopener noreferrer"
-  >
-    Powered by{' '}
-    <span className={styles.logo}>
-    <img src="/teraret.svg" alt="Teraret Logo" width={80} height={16} />
-    </span>
-  </a>
-</footer>
 </div>
 )
 }
