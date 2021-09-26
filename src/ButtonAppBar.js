@@ -7,7 +7,10 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import Image from 'next/image'
-import bessppl from '../public/bessppl.png'
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import DropDown from './DropDown';
+//import teraret from '../public/teraretwhite.png'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -23,6 +26,15 @@ const useStyles = makeStyles((theme) => ({
 
 export default function ButtonAppBar() {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    console.log(event.currentTarget)
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
 
   return (
     <div className={classes.root}>
@@ -32,10 +44,12 @@ export default function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-          <Image src={bessppl} alt="Bessppl" width={108} height={16} />
+            {/* <Image src={teraret} alt="Bessppl" width={108} height={16} /> */}
           </Typography>
-          <Button color="inherit">Registration</Button>
-          <Button color="inherit">Login</Button>
+      <DropDown Menu="SOFTWARE CONSULTING" MenuItem={["SOFTWARE APPLICATION DEVELOPMENT","MOBILE APPLICATION DEVELOPMENT"]}/>
+      <DropDown Menu="DESIGNING" MenuItem={["WEB DESIGNING","GRAPHIC DESIGNING"]}/>
+      <DropDown Menu="DIGITAL MARKETING" MenuItem={["FACEBOOK MARKETING","YOUTUBE MARKETING","LINKEDIN MARKETING"]}/>
+      <DropDown Menu="CONTACT" MenuItem={["CAREER","SUPPORT"]}/>
         </Toolbar>
       </AppBar>
     </div>

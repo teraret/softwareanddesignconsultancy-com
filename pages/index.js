@@ -10,48 +10,36 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>
-          Welcome to Software and Design Consultancy
-        </h1>
+<section>
+    <h1>SOFTWARE AND DESIGN CONSULTANCY</h1>
+
+    <p>
+       Software and Design Consultancy by Teraret is focused on Artificial Intelligence, Big Data, Mobility, Device Creation, Software Engineering, and Design thinking.
+
+        We believe in a high-quality workforce that delivers high-quality work and Profitable Enterprise.
+    </p>
+
+</section>
+ <section>
+        <h1>WHY CONSULT WITH US</h1>
 
         <p>
-        Software and Design Consultancy by Teraret is focused on Artificial Intelligence, Big Data, Mobility, Device Creation, Software Engineering, and Design thinking.
-We believe in a high-quality workforce that delivers high-quality work and Profitable Enterprise.
+          In Sdc we believe every product and project needs a dedicated effort with Expert team members. We help your company Hire and Manage Expert teams Both OffShore and On Shore.
+
+          Good Documentation is key for Success in any Digital Transformation Project.
+        </p>
+        <p>
+        We also work in 24/7 Development and Support Model by hiring team Across Different Geographical location to help in Continuous Integration
+
         </p>
 
-        <div>
-          <a href="/software-development" >
-            <h2>Sofware Development &rarr;</h2>
-            {/* <p>Find in-depth information about Next.js features and API.</p> */}
-          </a>
+    </section>
 
-          <a href="/mobile-application-development" >
-            <h2>Mobile App &rarr;</h2>
-            {/* <p>Learn about Next.js in an interactive course with quizzes!</p> */}
-          </a>
-          <a href="/mobile-application-development" >
-            <h2>Microservices &rarr;</h2>
-            {/* <p>Learn about Next.js in an interactive course with quizzes!</p> */}
-          </a>
-          <a href="/mobile-application-development" >
-            <h2>Product Development Team &rarr;</h2>
-            {/* <p>Learn about Next.js in an interactive course with quizzes!</p> */}
-          </a>
-        </div>
 
-        <h1 >
-        WHY CONSULT WITH US
-        </h1>
-
-        <p >
-        In Sdc we believe every product and project needs a dedicated effort with Expert team members. We help your company Hire and Manage Expert teams Both OffShore and On Shore.
-
-Good Documentation is key for Success in any Digital Transformation Project.
-
-​
-
-We also work in 24/7 Development and Support Model by hiring team Across Different Geographical location to help in Continuous Integration
-        </p>
+<section>
+     <h1>MICROSERVICES IS OUR GAME</h1>
+    <p>Microservice Development is the Way to Build High Performace and Scalable Application. Software & Design Consultant Company has expertise in this Art of Building Microservices using Java, Python, Node & Other Programming Languages hence enabling AI, ML, BigData, Software Development, and Mobile Dev.</p>
+ </section>
       </main>
     </div>
   )
