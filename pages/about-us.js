@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import ContentContainer from './../src/ContentContainer'
-export default function Home() {
+export default function AboutUs() {
 
   return (
     <div>
