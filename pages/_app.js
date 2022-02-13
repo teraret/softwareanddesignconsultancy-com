@@ -5,7 +5,8 @@ import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import theme from '../src/theme';
 import ButtonAppBar from '../src/ButtonAppBar';
-
+import Footer from '../src/Footer';
+import GlobalStyles from '@mui/material/GlobalStyles';
 // import Amplify from 'aws-amplify';
 // import config from './../aws-exports'
 // Amplify.configure({
@@ -33,10 +34,12 @@ export default function MyApp(props) {
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
       </Head>
       <ThemeProvider theme={theme}>
+      <GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: 'none' } }} />
         <ButtonAppBar />
         {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
         <CssBaseline />
         <Component {...pageProps} />
+        <Footer />
       </ThemeProvider>
     </React.Fragment>
   );
