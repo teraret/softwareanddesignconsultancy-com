@@ -1,6 +1,24 @@
 import Head from 'next/head'
-import ContentContainer from './../src/ContentContainer'
+import { makeStyles } from '@mui/styles';
+
+
+const useStyles = makeStyles(theme => ({
+  container: {
+    margin: 'auto',
+    padding: 'auto'
+  },
+  player: {
+      position: 'fixed',
+      width: '100%',
+      zIndex: '-1',
+    
+      
+  }
+
+}));
+
 export default function Home() {
+  const classes = useStyles();
 
   return (
     <div>
@@ -10,10 +28,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <ContentContainer title="About Us" content="We are Team of cinephile focused on a mission of releasing best in class Movies in both Online and Offline." />
-        <ContentContainer title="SOFTWARE and Design" content="Software Consultancy is focused on Artificial Intelligence, Big Data, Mobility, Device Creation, Software Engineering, and Design thinking.We believe in a high-quality workforce that delivers high-quality work and Profitable Enterprise." />
-        <ContentContainer title="WHY CONSULT WITH US" content="n Sdc we believe every product and project needs a dedicated effort with Expert team members. We help your company Hire and Manage Expert teams Both OffShore and On Shore. Good Documentation is key for Success in any Digital Transformation Project.We also work in 24/7 Development and Support Model by hiring team Across Different Geographical location to help in Continuous Integration" />
-        <ContentContainer title="MICROSERVICES IS OUR GAME" content="Microservice Development is the Way to Build High Performace and Scalable Application. Software & Design Consultant Company has expertise in this Art of Building Microservices using Java, Python, Node & Other Programming Languages hence enabling AI, ML, BigData, Software Development, and Mobile Dev." />      
+        <div className={classes.container}>
+      <video autoPlay loop muted className={classes.player}>
+        <source
+          src="https://teraret.github.io/video/backgroundppl.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+      </div>
         </main>
     </div>
   )

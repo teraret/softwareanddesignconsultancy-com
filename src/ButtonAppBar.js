@@ -108,7 +108,7 @@ const ButtonAppBar = () => {
           href="#"
           sx={{ my: 1, mx: 1.5 }}
         >
-         STUDIO SERVICES
+          DESIGNING CONSULTING
         </Link>
         <Link
           variant="button"
@@ -116,8 +116,9 @@ const ButtonAppBar = () => {
           href="#"
           sx={{ my: 1, mx: 1.5 }}
         >
-          DESIGNING
+         STUDIO SERVICES
         </Link>
+      
         <Link
           variant="button"
           color="text.primary"
